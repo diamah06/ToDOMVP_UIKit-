@@ -12,11 +12,11 @@
 		5349EEDC2B7E477000EBB252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5349EEDA2B7E477000EBB252 /* Main.storyboard */; };
 		5349EEDE2B7E477200EBB252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5349EEDD2B7E477200EBB252 /* Assets.xcassets */; };
 		5349EEE12B7E477200EBB252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5349EEDF2B7E477200EBB252 /* LaunchScreen.storyboard */; };
-		5349EEE92B7E478F00EBB252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5349EEE82B7E478F00EBB252 /* ViewController.swift */; };
 		5349EEEB2B7E479F00EBB252 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5349EEEA2B7E479F00EBB252 /* CustomCell.swift */; };
 		5349EEED2B7E47A600EBB252 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5349EEEC2B7E47A600EBB252 /* Presenter.swift */; };
 		5349EEEF2B7E47AB00EBB252 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5349EEEE2B7E47AB00EBB252 /* Model.swift */; };
 		5349EEF12B7E47B100EBB252 /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5349EEF02B7E47B100EBB252 /* TaskService.swift */; };
+		5349EEF52B7F655900EBB252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5349EEF42B7F655900EBB252 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +27,11 @@
 		5349EEDD2B7E477200EBB252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5349EEE02B7E477200EBB252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5349EEE22B7E477200EBB252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5349EEE82B7E478F00EBB252 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../ToDoList1_Uikit/ToDoList1_Uikit/ViewController.swift; sourceTree = "<group>"; };
 		5349EEEA2B7E479F00EBB252 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		5349EEEC2B7E47A600EBB252 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		5349EEEE2B7E47AB00EBB252 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		5349EEF02B7E47B100EBB252 /* TaskService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskService.swift; sourceTree = "<group>"; };
+		5349EEF42B7F655900EBB252 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			children = (
 				5349EED42B7E477000EBB252 /* AppDelegate.swift */,
 				5349EED62B7E477000EBB252 /* SceneDelegate.swift */,
-				5349EEE82B7E478F00EBB252 /* ViewController.swift */,
+				5349EEF42B7F655900EBB252 /* ViewController.swift */,
 				5349EEEA2B7E479F00EBB252 /* CustomCell.swift */,
 				5349EEDA2B7E477000EBB252 /* Main.storyboard */,
 				5349EEDD2B7E477200EBB252 /* Assets.xcassets */,
@@ -151,10 +151,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5349EED52B7E477000EBB252 /* AppDelegate.swift in Sources */,
-				5349EEE92B7E478F00EBB252 /* ViewController.swift in Sources */,
 				5349EEEB2B7E479F00EBB252 /* CustomCell.swift in Sources */,
 				5349EEF12B7E47B100EBB252 /* TaskService.swift in Sources */,
 				5349EEEF2B7E47AB00EBB252 /* Model.swift in Sources */,
+				5349EEF52B7F655900EBB252 /* ViewController.swift in Sources */,
 				5349EED72B7E477000EBB252 /* SceneDelegate.swift in Sources */,
 				5349EEED2B7E47A600EBB252 /* Presenter.swift in Sources */,
 			);
