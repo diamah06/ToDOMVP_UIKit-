@@ -22,11 +22,16 @@ class Presenter {
             }
             self.presenterProtocol?.getAllTask(tasks: tasks)
         }
-        
-        
+    }
+    
+    func deleteTask(taskID: String, completion: @escaping (Error?) -> Void) { // Add completion handler
+        service.deleteRecords(recordID: taskID) { error in
+            completion(error) // Call completion handler
+        }
     }
 }
 
 protocol PresenterProtocol {
     func getAllTask(tasks: [RecordTask])
+    func taskDeletionCompleted(with error: Error?) // delete 
 }

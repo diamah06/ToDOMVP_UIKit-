@@ -8,8 +8,8 @@
 import Foundation
 
 class TaskService {
-    private let url = URL(string: "https://api.airtable.com/v0/appvpzS8KBJH4XMpi/To%20do")
-    private let token = "patf96PhvPfwILjBr.d3c2fff3f7bc8d5511a0e8fc8da7c1dd1fec6e79465f757076700b71c6fc4b9a"
+    private let url = URL(string: "https://api.airtable.com/v0/appuHqR4Gb283bZ3o/To%20do")
+    private let token = "patAHCmKUJv1EhYdY.f69349ff16e42d1d24552c9088592b4e6aff3a70f61ef9d1ba57b7cff83e8b4e"
     
     func getRecords(completion: @escaping ([RecordTask]?, Error?) -> Void) {
         guard let url = url else { return }
@@ -40,4 +40,36 @@ class TaskService {
         }
         task.resume()
     }
+    
+    func deleteRecords(recordID: String, completion: @escaping (Error?) -> Void) {
+        guard let url = url else { return }
+        
+        let recordURL = url.appendingPathComponent(recordID)
+        
+        var request = URLRequest(url: recordURL)
+        request.httpMethod = "DELETE"
+        request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard error == nil else {
+                completion(error)
+                return
+            }
+            
+            guard let responseHttp = response as? HTTPURLResponse else {
+                completion(nil)
+                return
+            }
+            
+            guard responseHttp.statusCode == 200 else {
+                completion(nil)
+                return
+            }
+            
+            completion(nil)
+        }
+        task.resume()
+    }
+
+
 }
