@@ -9,7 +9,7 @@ import Foundation
 
 class Presenter {
     let presenterProtocol: PresenterProtocol?
-    let service = TaskService()
+    var service = TaskService()
     
     init(presenterProtocol: PresenterProtocol?) {
         self.presenterProtocol = presenterProtocol
