@@ -107,17 +107,15 @@
 		5349EED32B7E477000EBB252 /* ToDo_Uikit */ = {
 			isa = PBXGroup;
 			children = (
+				5349EF142B7F836100EBB252 /* Presenter  */,
+				5349EF132B7F833400EBB252 /* View */,
+				5349EF122B7F830D00EBB252 /* Moel */,
 				5349EED42B7E477000EBB252 /* AppDelegate.swift */,
 				5349EED62B7E477000EBB252 /* SceneDelegate.swift */,
-				5349EEF42B7F655900EBB252 /* ViewController.swift */,
-				5349EEEA2B7E479F00EBB252 /* CustomCell.swift */,
 				5349EEDA2B7E477000EBB252 /* Main.storyboard */,
 				5349EEDD2B7E477200EBB252 /* Assets.xcassets */,
 				5349EEDF2B7E477200EBB252 /* LaunchScreen.storyboard */,
 				5349EEE22B7E477200EBB252 /* Info.plist */,
-				5349EEEC2B7E47A600EBB252 /* Presenter.swift */,
-				5349EEEE2B7E47AB00EBB252 /* Model.swift */,
-				5349EEF02B7E47B100EBB252 /* TaskService.swift */,
 			);
 			path = ToDo_Uikit;
 			sourceTree = "<group>";
@@ -137,6 +135,32 @@
 				5349EF0B2B7F690300EBB252 /* ToDo_UikitTests.swift */,
 			);
 			path = ToDo_UikitTests;
+			sourceTree = "<group>";
+		};
+		5349EF122B7F830D00EBB252 /* Moel */ = {
+			isa = PBXGroup;
+			children = (
+				5349EEF02B7E47B100EBB252 /* TaskService.swift */,
+				5349EEEE2B7E47AB00EBB252 /* Model.swift */,
+			);
+			path = Moel;
+			sourceTree = "<group>";
+		};
+		5349EF132B7F833400EBB252 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5349EEEA2B7E479F00EBB252 /* CustomCell.swift */,
+				5349EEF42B7F655900EBB252 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5349EF142B7F836100EBB252 /* Presenter  */ = {
+			isa = PBXGroup;
+			children = (
+				5349EEEC2B7E47A600EBB252 /* Presenter.swift */,
+			);
+			path = "Presenter ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
