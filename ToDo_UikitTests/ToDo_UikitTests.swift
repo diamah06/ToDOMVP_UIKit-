@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import ToDo_Uikit // Assurez-vous d'importer votre projet ici
+@testable import ToDo_Uikit
 
 class PresenterTests: XCTestCase {
     var presenter: Presenter!
@@ -33,24 +33,24 @@ class PresenterTests: XCTestCase {
         let taskID = "123"
         var receivedError: Error?
 
-        // Créer une attente XCTestExpectation pour attendre la fin de l'appel asynchrone
+       
         let expectation = XCTestExpectation(description: "Delete task completion")
 
         // When
         presenter.deleteTask(taskID: taskID) { error in
             receivedError = error
-            // Marquer l'attente comme remplie une fois que le gestionnaire de complétion est appelé
+            
             expectation.fulfill()
         }
 
-        // Attendre que l'attente soit remplie avec un délai de 5 secondes
+        // Attendre que l'attente soit remplie
         wait(for: [expectation], timeout: 5)
 
         // Then
         XCTAssertEqual(mockService.mockDeleteRecordsCallsCount, 1)
         XCTAssertEqual(mockService.receivedRecordID, taskID)
 
-        // Vérifier si l'erreur reçue est nulle
+        // 
         XCTAssertNil(receivedError, "Expected no error, but received \(String(describing: receivedError))")
     }
 }
